@@ -66,10 +66,10 @@
         navigation {
             display-name = "NAVIG";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans     &kp LC(Q)  &kp W      &kp END    &kp LC(R)  &kp T      &trans  &trans  &kp LC(Y)      &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(P)  &kp ESC
+&kp LCTRL  &kp HOME   &kp LCTRL  &kp LALT   &kp LSHFT  &kp LC(G)  &trans  &trans  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &trans     &trans
+&trans     &kp LSHFT  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans                     &kp N          &kp RET    &kp BSPC   &kp DEL    &kp TAB    &trans
+                                 &trans     &trans     &trans                     &kp LC(SPACE)  &kp BSPC   &kp DEL
             >;
         };
 
