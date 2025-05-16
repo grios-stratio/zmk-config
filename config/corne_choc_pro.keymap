@@ -43,6 +43,51 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42>;
         };
+
+        caret6: caret6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CARET6";
+            bindings = <&kp CARET>, <&kp NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ampersand7: ampersand7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMPERSAND7";
+            bindings = <&kp AMPERSAND>, <&kp N7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        asterisk8: asterisk8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ASTERISK8";
+            bindings = <&kp ASTERISK>, <&kp N8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        leftparen9: leftparen9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTPAREN9";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rightparen0: rightparen0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHTPAREN0";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -77,9 +122,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &none  &none  &kp CARET    &kp AMPERSAND      &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
-&kp BSLH   &kp LSHFT        &kp LCTRL    &kp LALT      &kp LSHFT   &kp LESS_THAN  &none  &none  &kp PERCENT  &kp UNDERSCORE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp DOLLAR             &kp PIPE
-&kp RSHFT  &kp LGUI         &kp LCTRL    &kp CAPSLOCK  &caps_word  &none                        &kp RA(N)    &kp DOUBLE_QUOTES  &kp LESS_THAN     &kp GREATER_THAN      &kp QUESTION           &kp TILDE
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &none  &none  &caret6      &ampersand7        &asterisk8        &leftparen9        &rightparen0  &kp DEL
+&kp BSLH   &kp LSHFT        &kp LCTRL    &kp LALT      &kp LSHFT   &kp LESS_THAN  &none  &none  &kp PERCENT  &kp UNDERSCORE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOLLAR    &kp PIPE
+&kp RSHFT  &kp RIGHT_ALT    &kp LCTRL    &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)    &kp DOUBLE_QUOTES  &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &kp TILDE
                                          &none         &none       &none                        &kp ESC      &kp BSPC           &kp DEL
             >;
         };
@@ -87,10 +132,10 @@
         numbers {
             display-name = "NUMBER";
             bindings = <
-&kp GRAVE  &kp N1           &kp N2                &kp N3         &kp N4     &kp N5     &none  &none  &kp N6            &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
-&kp BSLH   &kp EXCLAMATION  &kp AT_SIGN           &kp EQUAL      &kp MINUS  &kp POUND  &none  &none  &kp GREATER_THAN  &kp LSHFT  &kp LALT   &kp LCTRL  &kp LSHFT  &trans
-&trans     &kp RA(SLASH)    &kp LS(RA(NUMBER_1))  &kp LA(EQUAL)  &kp SQT    &kp PLUS                 &kp F12           &kp ASTRK  &kp COMMA  &kp DOT    &kp FSLH   &trans
-                                                  &kp DEL        &kp BSPC   &kp SPACE                &trans            &trans     &trans
+&kp GRAVE  &kp N1           &kp N2                &kp N3          &kp N4           &kp N5     &none  &none  &kp N6            &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
+&kp BSLH   &kp EXCLAMATION  &kp AT_SIGN           &kp EQUAL       &kp MINUS        &kp POUND  &none  &none  &kp GREATER_THAN  &kp LSHFT  &kp LALT   &kp LCTRL  &kp LSHFT  &trans
+&trans     &kp RA(SLASH)    &kp LS(RA(NUMBER_1))  &kp LA(EQUAL)   &kp SQT          &kp PLUS                 &kp F12           &kp ASTRK  &kp COMMA  &kp DOT    &kp FSLH   &trans
+                                                  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SPACE                &trans            &trans     &trans
             >;
         };
 
