@@ -152,10 +152,10 @@
         funtion {
             display-name = "FUN";
             bindings = <
-&kp F12  &kp F1  &kp F2          &kp F3           &kp F4             &kp F5           &none  &none  &kp F6  &kp F7          &kp F8  &kp F9  &kp F10     &kp F11
-&none    &none   &msc SCRL_LEFT  &msc SCRL_UP     &msc SCRL_DOWN     &msc SCRL_RIGHT  &none  &none  &kp N6  &kp N7          &kp N8  &kp N9  &kp N0      &none
-&none    &none   &none           &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none                          &none   &studio_unlock  &none   &none   &sys_reset  &bootloader
-                                 &none            &none              &none                          &mo 5   &none           &none
+&kp F12  &kp F1      &kp F2          &kp F3           &kp F4             &kp F5           &none  &none  &kp F6  &kp F7          &kp F8  &kp F9  &kp F10     &kp F11
+&none    &caps_word  &msc SCRL_LEFT  &msc SCRL_UP     &msc SCRL_DOWN     &msc SCRL_RIGHT  &none  &none  &kp N6  &kp N7          &kp N8  &kp N9  &kp N0      &none
+&none    &none       &none           &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none                          &none   &studio_unlock  &none   &none   &sys_reset  &bootloader
+                                     &none            &none              &none                          &mo 5   &none           &none
             >;
         };
 
