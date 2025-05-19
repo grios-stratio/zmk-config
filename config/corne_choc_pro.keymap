@@ -122,9 +122,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &none  &none  &caret6      &ampersand7        &asterisk8        &leftparen9        &rightparen0  &kp DEL
-&kp BSLH   &kp LSHFT        &kp LCTRL    &kp LALT      &kp LSHFT   &kp LESS_THAN  &none  &none  &kp PERCENT  &kp UNDERSCORE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOLLAR    &kp PIPE
-&kp RSHFT  &kp RIGHT_ALT    &kp LCTRL    &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)    &kp DOUBLE_QUOTES  &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &kp TILDE
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &none  &none  &caret6      &ampersand7        &asterisk8     &leftparen9       &rightparen0       &kp DEL
+&kp BSLH   &kp LSHFT        &kp LCTRL    &kp LALT      &kp LSHFT   &kp LESS_THAN  &none  &none  &kp PERCENT  &kp UNDERSCORE     &kp DOLLAR     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
+&kp RSHFT  &kp RIGHT_ALT    &kp LCTRL    &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)    &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION       &kp TILDE
                                          &none         &none       &none                        &kp ESC      &kp BSPC           &kp DEL
             >;
         };
@@ -142,9 +142,9 @@
         navigation {
             display-name = "NAVIG";
             bindings = <
-&none           &kp LC(Q)  &kp LC(W)  &kp END           &kp LC(R)  &kp LC(T)  &none  &none  &kp LC(Y)      &kp LC(U)     &kp LC(I)    &kp LC(O)  &kp LC(P)   &kp ESC
-&kp LCTRL       &kp HOME   &kp LCTRL  &kp LALT          &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT  &caps_word  &caps_word
-&kp LEFT_SHIFT  &kp LSHFT  &kp LC(X)  &kp LC(C)         &kp LC(V)  &none                    &kp LC(N)      &kp RET       &kp BSPC     &kp DEL    &kp TAB     &kp RIGHT_SHIFT
+&none           &kp LC(Q)  &kp LC(W)  &kp END           &kp LC(R)  &kp LC(T)  &none  &none  &kp LC(Y)      &kp LC(U)     &kp LC(I)    &kp LC(O)  &kp LC(P)          &kp ESC
+&kp LCTRL       &kp HOME   &kp LCTRL  &kp LALT          &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT  &kp LC(SEMICOLON)  &caps_word
+&kp LEFT_SHIFT  &kp LSHFT  &kp LC(X)  &kp LC(C)         &kp LC(V)  &none                    &kp LC(N)      &kp RET       &kp BSPC     &kp DEL    &kp TAB            &kp RIGHT_SHIFT
                                       &kp LEFT_CONTROL  &none      &none                    &kp LC(SPACE)  &kp LC(BSPC)  &kp LC(DEL)
             >;
         };
