@@ -137,7 +137,11 @@
         altab_enter: altab_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&to 6>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB &to 6>;
 
             label = "ALTAB_ENTER";
             wait-ms = <10>;
