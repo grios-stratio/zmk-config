@@ -285,7 +285,7 @@
 &kp F12  &kp N1          &kp N2            &kp N3        &kp N4           &kp N5     &none  &none  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
 &none    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT   &none      &none  &none  &none      &kp LSHFT  &kp LALT   &kp LCTRL  &kp LSHFT  &trans
 &trans   &kp PIPE        &kp MINUS         &kp EQUAL     &kp MINUS        &none                    &none      &kp ASTRK  &kp COMMA  &kp DOT    &kp FSLH   &trans
-                                           &mo 7         &kp RIGHT_BRACE  &kp SPACE                &kp SPACE  &none      &trans
+                                           &mo 7         &kp RIGHT_BRACE  &kp SPACE                &kp SPACE  &to 0      &trans
             >;
         };
 
