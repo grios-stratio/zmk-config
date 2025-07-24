@@ -181,7 +181,7 @@
         dollar4: dollar4 {
             compatible = "zmk,behavior-mod-morph";
             label = "DOLLAR4";
-            bindings = <&kp DOLLAR>, <&kp NUMBER_3>;
+            bindings = <&kp DOLLAR>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
