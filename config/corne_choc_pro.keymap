@@ -195,6 +195,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        brace_bracket_L: brace_bracket_L {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACE_BRACKET_L";
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        brace_bracket_R: brace_bracket_R {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACE_BRACKET_R";
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -262,20 +280,20 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1         &kp N2     &kp N3        &kp N4      &kp N5         &none  &none  &caret6    &ampersand7        &asterisk8     &leftparen9       &rightparen0       &kp DEL
-&kp BSLH   &kp LSHFT      &kp LCTRL  &kp LALT      &kp LSHFT   &kp SEMICOLON  &none  &none  &kp COLON  &kp UNDERSCORE     &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&kp RSHFT  &kp RIGHT_ALT  &kp LCTRL  &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION       &kp TILDE
-                                     &none         &none       &none                        &kp ESC    &kp BSPC           &kp DEL
+&kp GRAVE  &exclam1       &at2       &hash3        &dollar4    &percent5      &none  &none  &caret6        &ampersand7        &asterisk8     &leftparen9       &rightparen0      &kp DEL
+&kp BSLH   &kp LSHFT      &kp LCTRL  &kp LALT      &kp LSHFT   &kp SEMICOLON  &none  &none  &kp COLON      &kp UNDERSCORE     &kp PLUS       &brace_bracket_L  &brace_bracket_R  &kp PIPE
+&kp RSHFT  &kp RIGHT_ALT  &kp LCTRL  &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)      &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION      &kp TILDE
+                                     &none         &none       &none                        &kp BACKSPACE  &kp ESC            &kp DEL
             >;
         };
 
         symbol-left {
             display-name = " SYMBOL_L";
             bindings = <
-&kp GRAVE  &exclam1        &at2                  &hash3          &dollar4         &percent5      &none  &none  &kp N6            &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
-&kp BSLH   &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp EQUAL       &kp MINUS        &kp SEMICOLON  &none  &none  &kp GREATER_THAN  &kp LSHFT  &kp LALT   &kp LCTRL  &kp LSHFT  &trans
-&trans     &kp RA(SLASH)   &kp LS(RA(NUMBER_1))  &kp LA(EQUAL)   &kp SQT          &kp GRAVE                    &kp F12           &kp ASTRK  &kp COMMA  &kp DOT    &kp FSLH   &trans
-                                                 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SPACE                    &trans            &trans     &none
+&kp GRAVE  &exclam1          &at2                  &hash3          &dollar4         &percent5      &none  &none  &caret6           &ampersand7  &asterisk8  &leftparen9  &rightparen0  &kp BSPC
+&kp BSLH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp EQUAL       &kp MINUS        &kp SEMICOLON  &none  &none  &kp GREATER_THAN  &kp LSHFT    &kp LALT    &kp LCTRL    &kp LSHFT     &trans
+&trans     &kp RA(SLASH)     &kp LS(RA(NUMBER_1))  &kp LA(EQUAL)   &kp SQT          &kp GRAVE                    &kp F12           &kp ASTRK    &kp COMMA   &kp DOT      &kp FSLH      &trans
+                                                   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SPACE                    &trans            &trans       &none
             >;
         };
 
@@ -302,10 +320,10 @@
         navnumber {
             display-name = "NAVNUM";
             bindings = <
-&altab_in       &kp N1          &kp N2     &kp N3     &kp N4     &kp N5     &none  &none  &kp N6         &kp N7        &kp N8       &kp N9     &kp N0      &kp BACKSPACE
-&kp LCTRL       &kp LEFT_SHIFT  &kp LCTRL  &kp LALT   &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT  &caps_word  &caps_word
-&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                    &kp LC(N)      &kp RET       &kp COMMA    &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
-                                           &none      &none      &mo 8                    &kp LC(SPACE)  &kp LC(BSPC)  &kp LC(DEL)
+&altab_in       &kp N1          &kp N2     &kp N3     &kp N4     &kp N5     &none  &none  &kp N6             &kp N7        &kp N8       &kp N9     &kp N0      &kp BACKSPACE
+&kp LCTRL       &kp LEFT_SHIFT  &kp LCTRL  &kp LALT   &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT           &kp DOWN      &kp UP       &kp RIGHT  &caps_word  &caps_word
+&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                    &kp LC(N)          &kp RET       &kp COMMA    &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
+                                           &none      &none      &mo 8                    &kp LC(BACKSPACE)  &kp LC(BSPC)  &kp LC(DEL)
             >;
         };
 
