@@ -280,10 +280,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &exclam1       &at2       &hash3        &dollar4    &percent5      &none  &none  &caret6     &ampersand7        &asterisk8     &leftparen9       &rightparen0  &kp DEL
-&kp BSLH   &kp LSHFT      &kp LCTRL  &kp LALT      &kp LSHFT   &kp SEMICOLON  &none  &none  &kp COLON   &kp UNDERSCORE     &kp PLUS       &bracekt_L        &braceckt_R   &kp PIPE
-&kp RSHFT  &kp RIGHT_ALT  &kp LCTRL  &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)   &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp TILDE
-                                     &none         &none       &none                        &kp ESCAPE  &kp ESC            &kp BACKSPACE
+&kp GRAVE  &exclam1       &at2       &hash3        &dollar4    &percent5      &none  &none  &caret6     &ampersand7        &asterisk8         &leftparen9       &rightparen0  &kp DEL
+&kp BSLH   &kp LSHFT      &kp LCTRL  &kp LALT      &kp LSHFT   &kp SEMICOLON  &none  &none  &kp COLON   &kp UNDERSCORE     &kp PLUS           &bracekt_L        &braceckt_R   &kp PIPE
+&kp RSHFT  &kp RIGHT_ALT  &kp LCTRL  &kp CAPSLOCK  &caps_word  &kp LEFT_GUI                 &kp RA(N)   &kp DOUBLE_QUOTES  &kp LESS_THAN      &kp GREATER_THAN  &kp QUESTION  &kp TILDE
+                                     &none         &none       &none                        &kp ESCAPE  &kp BACKSPACE      &kp LC(BACKSPACE)
             >;
         };
 
@@ -320,10 +320,10 @@
         navnumber {
             display-name = "NAVNUM";
             bindings = <
-&altab_in       &kp N1          &kp N2     &kp N3     &kp N4     &kp N5     &none  &none  &kp N6             &kp N7        &kp N8       &kp N9     &kp N0      &kp BACKSPACE
-&kp LCTRL       &kp LEFT_SHIFT  &kp LCTRL  &kp LALT   &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT           &kp DOWN      &kp UP       &kp RIGHT  &caps_word  &caps_word
-&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                    &kp LC(N)          &kp RET       &kp COMMA    &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
-                                           &none      &none      &mo 8                    &kp LC(BACKSPACE)  &kp LC(BSPC)  &kp LC(DEL)
+&altab_in       &kp N1          &kp N2     &kp N3     &kp N4     &kp N5     &none  &none  &kp N6     &kp N7      &kp N8       &kp N9     &kp N0      &kp BACKSPACE
+&kp LCTRL       &kp LEFT_SHIFT  &kp LCTRL  &kp LALT   &kp LSHFT  &kp LC(G)  &none  &none  &kp LEFT   &kp DOWN    &kp UP       &kp RIGHT  &caps_word  &caps_word
+&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                    &kp LC(N)  &kp RET     &kp COMMA    &kp DOT    &kp FSLH    &kp RIGHT_SHIFT
+                                           &none      &none      &mo 8                    &kp ESC    &kp DELETE  &kp LC(DEL)
             >;
         };
 
